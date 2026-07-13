@@ -19,7 +19,7 @@ const Contact = sequelize.define('Contact', {
   allowNull: false,
   unique: true,
   validate: {
-   is: /^[0-9]{10}$/,
+   is: /^[0-9]{10,11}$/,
   }
  },
  favorite: {
