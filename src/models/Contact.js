@@ -25,5 +25,11 @@ const Contact = sequelize.define('Contact', {
  favorite: {
   type: DataTypes.BOOLEAN,
   allowNull: false,
+  defaultValue: false
  },
+}, {
+ tableName: 'contacts',
+ timestamps: true
 });
+
+module.exports = Contact;
