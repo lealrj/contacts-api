@@ -31,7 +31,7 @@ async function getByName(req, res) {
 }
 
 async function create(req, res) {
- const result = postSchema.safeParse(req.body);
+ const result = contactSchema.safeParse(req.body);
  if (!result.success) {
   return res.status(400).json({
    error: {

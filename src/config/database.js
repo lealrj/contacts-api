@@ -10,4 +10,4 @@ const sequelize = new Sequelize({
  password: process.env.DB_PASSWORD,
 });
 
-module.exports = sequelize; 
+module.exports = sequelize;
